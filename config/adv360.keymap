@@ -35,7 +35,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
+        default {
             bindings = <
 &kp EQUAL       &kp N1     &kp N2        &kp N3    &kp N4     &kp N5  &mo 3                                                                      &tog 1         &kp N6  &kp N7  &kp N8     &kp N9            &kp N0    &kp MINUS
 &kp TAB         &kp Q      &kp W         &kp E     &kp R      &kp T   &mo 3                                                                      &kp C_BRI_UP   &kp Y   &kp U   &kp I      &kp O             &kp P     &kp BSLH
@@ -43,6 +43,8 @@
 &kp LEFT_SHIFT  &kp Z      &kp X         &kp C     &kp V      &kp B                                &kp C_NEXT      &kp C_VOLUME_DOWN                            &kp N   &kp M   &kp COMMA  &kp DOT           &kp FSLH  &kp RETURN
 &mo 2           &kp GRAVE  &kp LEFT_ALT  &kp LEFT  &kp RIGHT          &kp SPACE  &kp LEFT_COMMAND  &kp C_PREV      &kp C_MUTE         &kp ENTER  &kp BACKSPACE          &kp UP  &kp DOWN   &kp LEFT_BRACKET  &kp RBKT  &mo 0
             >;
+
+            label = "Yellow";
         };
 
         keypad {
@@ -54,6 +56,8 @@
 &kp LSHFT  &kp Z      &kp X     &kp C     &kp V      &kp B                        &kp HOME      &kp PG_UP                        &kp N   &kp KP_N1   &kp KP_N2     &kp KP_N3      &kp KP_ENTER     &kp RSHFT
 &mo 2      &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT          &kp BSPC  &kp DEL    &kp END       &kp PG_DN  &kp ENTER  &kp KP_N0          &kp UP      &kp DOWN      &kp KP_DOT     &kp RBKT         &mo 2
             >;
+
+            label = "Green";
         };
 
         fn {
@@ -65,6 +69,8 @@
 &trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans   &trans   &trans
 &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans   &trans   &trans
             >;
+
+            label = "Blue";
         };
 
         mod {
@@ -76,6 +82,8 @@
 &none           &none         &none         &none         &macro_ver    &none                             &none      &none                                    &none  &none       &none       &none  &none  &none
 &none           &none         &none         &none         &none                       &none        &none  &none      &none       &bl BL_TOG  &rgb_ug RGB_TOG         &bl BL_INC  &bl BL_DEC  &none  &none  &none
             >;
+
+            label = "Red";
         };
     };
 };
